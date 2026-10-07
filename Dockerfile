@@ -29,7 +29,7 @@ ENV DATABASE_URL=postgres://build:build@127.0.0.1:5432/build \
     AUTH_SECRET=build-only-not-a-real-secret \
     NEXTAUTH_SECRET=build-only-not-a-real-secret \
     ENCRYPTION_KEY=0000000000000000000000000000000000000000000000000000000000000000 \
-    NEXT_PUBLIC_APP_URL=http://localhost:3000
+    NEXT_PUBLIC_APP_URL=https://app.bookedsolidtrades.com
 RUN pnpm --filter @seldonframe/crm build
 
 # ---------- runner ----------

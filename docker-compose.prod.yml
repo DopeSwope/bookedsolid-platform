@@ -1,0 +1,9 @@
+services:
+  neon-proxy:
+    ports: !override
+      - "127.0.0.1:4444:4444"
+  app:
+    ports: !override
+      - "127.0.0.1:3000:3000"
+    environment:
+      NEXT_PUBLIC_APP_URL: https://app.bookedsolidtrades.com
